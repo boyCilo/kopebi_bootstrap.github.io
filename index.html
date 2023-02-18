@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard - NiceAdmin Bootstrap Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/boxicons.css">
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/quill/quill.snow.css">
+    <link rel="stylesheet" href="assets/css/vendor/quill/quill.bubble.css">
+    <link rel="stylesheet" href="assets/css/vendor/remixicon/remixicon.css">
+    <link rel="stylesheet" href="assets/css/vendor/simple-datatables/style.css">
+    <link rel="stylesheet" href="assets/css/css/style.css">
+</head>
+
+<body>
+    <header class="d-flex align-items-center header fixed-top" id="header">
+        <div class="d-flex justify-content-between align-items-center"><a class="d-flex align-items-center logo" href="index.html"><img src="assets/img/logo-kopebi.png" alt=""><span class="d-none d-lg-block">KOPEBI Kupang</span></a><i class="bi bi-list toggle-sidebar-btn"></i></div>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-grid"></i><span>Dashboard</span></a></li>
+            <li class="nav-heading">Pages</li>
+            <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#simpanan" data-bs-toggle="collapse" href="#"><i class="bi bi-cash-stack"></i><span>Simpanan</span><i class="ms-auto bi bi-chevron-down"></i></a><ul id="simpanan" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+    <li><a href="#"><i class="bi bi-circle"></i><span>Default</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Simpanan Pokok</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Simpanan Wajib</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Simpanan Sukarela</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Simpanan Lain-lain</span></a></li>
+</ul></li>
+            <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#pinjaman" data-bs-toggle="collapse" href="#"><i class="bi bi-credit-card"></i><span>Pinjaman</span><i class="ms-auto bi bi-chevron-down"></i></a><ul id="pinjaman" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+    <li><a href="#"><i class="bi bi-circle"></i><span>Default</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Pinjaman Multiguna</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Pinjaman Khusus</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Pinjaman Investasi</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Talangan</span></a></li>
+</ul>
+</li>
+            <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#penjualan" data-bs-toggle="collapse" href="#"><i class="bi bi-cart3"></i><span>Penjualan</span><i class="ms-auto bi bi-chevron-down"></i></a><ul id="penjualan" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+    <li><a href="#"><i class="bi bi-circle"></i><span>Default</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Penjualan Barang</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Penjualan Tiket</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Penjualan Lain-lain</span></a></li>
+</ul></li>
+            <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#pembelian" data-bs-toggle="collapse" href="#"><i class="bi bi-basket3"></i><span>Pembelian</span><i class="ms-auto bi bi-chevron-down"></i></a><ul id="pembelian" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+    <li><a href="#"><i class="bi bi-circle"></i><span>Default</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Stock Barang</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Vendor Pembelian</span></a></li>
+</ul></li>
+            <li class="nav-heading">Laporan</li>
+            <li class="nav-item"><a class="nav-link collapsed" data-bs-target="#barang" data-bs-toggle="collapse" href="#"><i class="bi bi-stack"></i><span>Barang</span><i class="ms-auto bi bi-chevron-down"></i></a><ul id="barang" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+    <li><a href="#"><i class="bi bi-circle"></i><span>Pembelian Barang</span></a></li>
+    <li><a href="#"><i class="bi bi-circle"></i><span>Penjualan Barang</span></a></li>
+</ul><a class="nav-link collapsed" href="pages-contact.html"><i class="bi bi-graph-up"></i><span>Cashflow</span></a><a class="nav-link collapsed" href="pages-contact.html"><i class="bi bi-people"></i><span>Anggota</span></a></li>
+            <li class="nav-heading">Konfigurasi</li>
+            <li class="nav-item"><a class="nav-link collapsed" href="users-profile.html"><i class="bi bi-person"></i><span>Profile</span></a><a class="nav-link collapsed" data-bs-target="#kategori" data-bs-toggle="collapse" href="#"><i class="bi bi-bookmarks"></i><span>Kategori</span><i class="ms-auto bi bi-chevron-down"></i></a><ul id="kategori" class="nav-content collapse " data-bs-parent="#sidebar-nav"><li><a href="icons-bootstrap.html"><i class="bi bi-circle"></i><span>Simpanan</span></a></li><li><a href="icons-remix.html"><i class="bi bi-circle"></i><span>Pinjaman</span></a></li></ul></li>
+            <li class="nav-heading" style="margin-bottom: 20px;margin-top: 20px;"></li>
+            <li class="nav-item"><a class="nav-link collapsed" href="pages-login.html"><i class="bi bi-box-arrow-left"></i><span>Logout</span></a></li>
+        </ul>
+    </aside>
+    <main id="main" class="main">
+        <div class="pagetitle">
+            <h1>Dashboard</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><span>Home</span></a></li>
+                    <li class="breadcrumb-item active"><span>Dashboard</span></li>
+                </ol>
+            </nav>
+        </div>
+        <section class="section dashboard">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="card info-card sales-card">
+                                <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                        <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                        <li><a class="dropdown-item" href="#">Today</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sales <span>| Today</span></h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center card-icon rounded-circle"><i class="bi bi-cart"></i></div>
+                                        <div class="ps-3">
+                                            <h6>145</h6><span class="fw-bold text-success small pt-1">12%</span><span class="text-muted small pt-2 ps-1">increase</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xxl-4">
+                            <div class="card info-card revenue-card">
+                                <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                        <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                        <li><a class="dropdown-item" href="#">Today</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Revenue <span>| This Month</span></h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center card-icon rounded-circle"><i class="bi bi-currency-dollar"></i></div>
+                                        <div class="ps-3">
+                                            <h6>$3,264</h6><span class="fw-bold text-success small pt-1">8%</span><span class="text-muted small pt-2 ps-1">increase</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-xxl-4">
+                            <div class="card info-card customers-card">
+                                <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                        <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                        <li><a class="dropdown-item" href="#">Today</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Customers <span>| This Year</span></h5>
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center card-icon rounded-circle"><i class="bi bi-people"></i></div>
+                                        <div class="ps-3">
+                                            <h6>1244</h6><span class="fw-bold text-danger small pt-1">12%</span><span class="text-muted small pt-2 ps-1">decrease</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                        <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                        <li><a class="dropdown-item" href="#">Today</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Reports <span>/Today</span></h5>
+                                    <div id="reportsChart"></div><script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Sales',
+                          data: [31, 40, 28, 51, 42, 82, 56],
+                        }, {
+                          name: 'Revenue',
+                          data: [11, 32, 45, 32, 34, 52, 41]
+                        }, {
+                          name: 'Customers',
+                          data: [15, 11, 32, 18, 9, 24, 11]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy HH:mm'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card recent-sales overflow-auto">
+                                <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                        <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                        <li><a class="dropdown-item" href="#">Today</a></li>
+                                        <li><a class="dropdown-item" href="#">This Month</a></li>
+                                        <li><a class="dropdown-item" href="#">This Year</a></li>
+                                    </ul>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Recent Sales <span>| Today</span></h5>
+                                    <div>
+                                        <table class="table table-borderless datatable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Customer</th>
+                                                    <th scope="col">Product</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row"><a href="#">#2457</a></td>
+                                                    <td>Brandon Jacob</td>
+                                                    <td><a href="#" class="text-primary">At praesentium minu</a></td>
+                                                    <td>$64</td>
+                                                    <td><span class="badge bg-success">Approved</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row"><a href="#">#2147</a></td>
+                                                    <td>Bridie Kessler</td>
+                                                    <td><a href="#" class="text-primary">Blanditiis dolor omnis similique</a></td>
+                                                    <td>$47</td>
+                                                    <td><span class="badge bg-warning">Pending</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row"><a href="#">#2049</a></td>
+                                                    <td>Ashleigh Langosh</td>
+                                                    <td><a href="#" class="text-primary">At recusandae consectetur</a></td>
+                                                    <td>$147</td>
+                                                    <td><span class="badge bg-success">Approved</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row"><a href="#">#2644</a></td>
+                                                    <td>Angus Grady</td>
+                                                    <td><a href="#" class="text-primar">Ut voluptatem id earum et</a></td>
+                                                    <td>$67</td>
+                                                    <td><span class="badge bg-danger">Rejected</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row"><a href="#">#2644</a></td>
+                                                    <td>Raheem Lehner</td>
+                                                    <td><a href="#" class="text-primary">Sunt similique distinctio</a></td>
+                                                    <td>$165</td>
+                                                    <td><span class="badge bg-success">Approved</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                <li><a class="dropdown-item" href="#">Today</a></li>
+                                <li><a class="dropdown-item" href="#">This Month</a></li>
+                                <li><a class="dropdown-item" href="#">This Year</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Recent Activity <span>| Today</span></h5>
+                            <div class="activity">
+                                <div class="d-flex activity-item">
+                                    <div class="activite-label"><span>32 min</span></div><i class="text-success align-self-start bi bi-circle-fill activity-badge"></i>
+                                    <div class="activity-content"><span> Quia quae rerum </span><a class="fw-bold text-dark" href="#">explicabo officiis</a><span> beatae </span></div>
+                                </div>
+                                <div class="d-flex activity-item">
+                                    <div class="activite-label"><span>56 min</span></div><i class="text-danger align-self-start bi bi-circle-fill activity-badge"></i>
+                                    <div class="activity-content"><span> Voluptatem blanditiis blanditiis eveniet </span></div>
+                                </div>
+                                <div class="d-flex activity-item">
+                                    <div class="activite-label"><span>2 hrs</span></div><i class="text-primary align-self-start bi bi-circle-fill activity-badge"></i>
+                                    <div class="activity-content"><span> Voluptates corrupti molestias voluptatem </span></div>
+                                </div>
+                                <div class="d-flex activity-item">
+                                    <div class="activite-label"><span>1 day</span></div><i class="text-info align-self-start bi bi-circle-fill activity-badge"></i>
+                                    <div class="activity-content"><span> Tempore autem saepe </span><a class="fw-bold text-dark" href="#">occaecati voluptatem</a><span> tempore </span></div>
+                                </div>
+                                <div class="d-flex activity-item">
+                                    <div class="activite-label"><span>2 days</span></div><i class="text-warning align-self-start bi bi-circle-fill activity-badge"></i>
+                                    <div class="activity-content"><span> Est sit eum reiciendis exercitationem </span></div>
+                                </div>
+                                <div class="d-flex activity-item">
+                                    <div class="activite-label"><span>4 weeks</span></div><i class="text-muted align-self-start bi bi-circle-fill activity-badge"></i>
+                                    <div class="activity-content"><span> Dicta dolorem harum nulla eius. Ut quidem quidem sit quas </span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                <li><a class="dropdown-item" href="#">Today</a></li>
+                                <li><a class="dropdown-item" href="#">This Month</a></li>
+                                <li><a class="dropdown-item" href="#">This Year</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title">Budget Report <span>| This Month</span></h5>
+                            <div id="budgetChart" style="min-height: 400px;" class="echart"></div><script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
+                    legend: {
+                      data: ['Allocated Budget', 'Actual Spending']
+                    },
+                    radar: {
+                      // shape: 'circle',
+                      indicator: [{
+                          name: 'Sales',
+                          max: 6500
+                        },
+                        {
+                          name: 'Administration',
+                          max: 16000
+                        },
+                        {
+                          name: 'Information Technology',
+                          max: 30000
+                        },
+                        {
+                          name: 'Customer Support',
+                          max: 38000
+                        },
+                        {
+                          name: 'Development',
+                          max: 52000
+                        },
+                        {
+                          name: 'Marketing',
+                          max: 25000
+                        }
+                      ]
+                    },
+                    series: [{
+                      name: 'Budget vs spending',
+                      type: 'radar',
+                      data: [{
+                          value: [4200, 3000, 20000, 35000, 50000, 18000],
+                          name: 'Allocated Budget'
+                        },
+                        {
+                          value: [5000, 14000, 28000, 26000, 42000, 21000],
+                          name: 'Actual Spending'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="filter"><a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                <li class="text-start dropdown-header"><h6>Filter</h6></li>
+                                <li><a class="dropdown-item" href="#">Today</a></li>
+                                <li><a class="dropdown-item" href="#">This Month</a></li>
+                                <li><a class="dropdown-item" href="#">This Year</a></li>
+                            </ul>
+                        </div>
+                        <div class="card-body pb-0">
+                            <h5 class="card-title">Website Traffic <span>| Today</span></h5>
+                            <div id="trafficChart" style="min-height: 400px;" class="echart"></div><script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  echarts.init(document.querySelector("#trafficChart")).setOption({
+                    tooltip: {
+                      trigger: 'item'
+                    },
+                    legend: {
+                      top: '5%',
+                      left: 'center'
+                    },
+                    series: [{
+                      name: 'Access From',
+                      type: 'pie',
+                      radius: ['40%', '70%'],
+                      avoidLabelOverlap: false,
+                      label: {
+                        show: false,
+                        position: 'center'
+                      },
+                      emphasis: {
+                        label: {
+                          show: true,
+                          fontSize: '18',
+                          fontWeight: 'bold'
+                        }
+                      },
+                      labelLine: {
+                        show: false
+                      },
+                      data: [{
+                          value: 1048,
+                          name: 'Search Engine'
+                        },
+                        {
+                          value: 735,
+                          name: 'Direct'
+                        },
+                        {
+                          value: 580,
+                          name: 'Email'
+                        },
+                        {
+                          value: 484,
+                          name: 'Union Ads'
+                        },
+                        {
+                          value: 300,
+                          name: 'Video Ads'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+        <div class="copyright"><span> © Copyright </span><strong><span>NiceAdmin</span></strong><span>. All Rights Reserved </span></div>
+        <div class="credits"><span> Designed by </span><a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+    </footer><a class="d-flex justify-content-center align-items-center back-to-top" href="#"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/js/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/js/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/js/vendor/quill/quill.min.js"></script>
+    <script src="assets/js/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/js/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/js/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/js/main.js"></script>
+</body>
+
+</html>
